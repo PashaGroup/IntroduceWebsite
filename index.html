@@ -171,9 +171,20 @@
                     <h3>ایمان جامی‌مقدم</h3>
                     <p>مدیر گروه</p>
                 </section>
-                <section class="3u 6u(small) 9u$(xsmall)">
-                    <span class="icon alt major" style="background: url(images/Pooya.JPG) left top; background-repeat: no-repeat; width: 100px; height: 100px" >
+                <section class="3u 6u(small) 9u$(xsmall) pooya">
+                    <span class="icon alt major pooya" style="background: url(images/Pooya.JPG) left top; background-repeat: no-repeat; width: 100px; height: 100px" >
                     </span>
+                    <style>
+                        .pooya:hover {
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                    </style>
+                    <script>
+                        $('.pooya').click(function(){
+                            window.location = 'http://ce.sharif.edu/~pooyapooya'
+                        });
+                    </script>
                     <h3>پویا مصدق</h3>
                     <p>مدیر فنی بخش منطق سامانه‌ها</p>
                 </section>
