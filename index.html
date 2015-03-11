@@ -38,7 +38,7 @@
     <nav class="nav" style="left: 1em">
         <ul>
             <li>
-                <a href="http://pashagroup.ir/wordpress-4.1-fa_IR/wordpress/">اخبار گروه</a>
+                <a href="http://pashagroup.ir/info">اخبار گروه</a>
 
             </li>
         </ul>
@@ -48,11 +48,12 @@
         <ul>
 
             <li></li>
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="#one">اساس‌نامه‌</a></li>
-            <li><a href="#two">ارتباط و عقد قرارداد‌</a></li>
-            <li><a href="#three">پروژه‌ها</a></li>
-            <li><a href="#four">معرفی اعضا</a></li>
+            <li><a href="#four" class="scrolly">معرفی اعضا</a></li>
+            <li><a href="#threeonim" class="scrolly">معرفی درس</a></li>
+            <li><a href="#three" class="scrolly">پروژه‌ها</a></li>
+            <li><a href="#two" class="scrolly">ارتباط و عقد قرارداد‌</a></li>
+            <li><a href="#one" class="scrolly">اساس‌نامه‌</a></li>
+            <li><a href="index.html" class="scrolly">خانه</a></li>
             <li></li>
         </ul>
 
@@ -149,6 +150,27 @@
         <!--<li><a href="#" class="button">Learn More</a></li>-->
         <!--</ul>-->
     </div>
+    <a href="#threeonim" class="goto-next scrolly">Next</a>
+</section>
+
+<!-- ThreeOnim -->
+<section id="threeonim" class="spotlight style2 right">
+    <span class="image fit main"><img src="images/Background%20Images/35.jpg" alt="" /></span>
+    <div class="content">
+        <header>
+            <h2>معرفی درس</h2>
+            <p>تحلیل و طراحی سیستم‌ها </p>
+        </header>
+        <p>این گروه از پشتیبانی اساتید و بزرگان صنعت و دانشگاه بهره می‌برد و این سبب شده تا پیشرو در انجام کارهای بزرگ باشد. <br>
+            همکاری  با اساتید دانشگاه صنعتی شریف به همراه تجربه‌ی صنعتی اعضا این امکان را فراهم آورده تا پروژه‌هایی در سطح روز دنیا قابلیت اجرا پیدا کنند.
+        </p>
+        <p>
+            <a href="mailto:pashagroupmail@gmail.com">لینک صفحه‌ی درس</a>
+        </p>
+        <!--<ul class="actions">-->
+        <!--<li><a href="#" class="button">Learn More</a></li>-->
+        <!--</ul>-->
+    </div>
     <a href="#four" class="goto-next scrolly">Next</a>
 </section>
 
@@ -161,22 +183,58 @@
         </header>
         <div class="box alt">
             <div class="row uniform">
-                <section class="3u 6u$(small) 9u$(xsmall)">
-                    <span class="icon alt major" style="background: url(images/Arman.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                <!--arman-->
+                <section class="3u 6u$(small) 9u$(xsmall) arman">
+                    <span class="icon alt major arman" style="background: url(images/Arman.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                    <style>
+                        .arman:hover {
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                    </style>
+                    <script>
+                        $('.arman').click(function(){
+                            window.location = 'http://pashagroup.ir/info/?cat=15'
+                        });
+                    </script>
                     <h3>آرمان محمدی</h3>
                     <p>روابط عمومی و امور مالی</p>
                 </section>
-
-                <section class="3u 6u(small) 9u$(xsmall)">
-                    <span class="icon alt major" style="background: url(images/Shamim.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                <!--shamim-->
+                <section class="3u 6u(small) 9u$(xsmall) shamim">
+                    <span class="icon alt major shamim" style="background: url(images/Shamim.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                    <style>
+                        .shamim:hover {
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                    </style>
+                    <script>
+                        $('.shamim').click(function(){
+                            window.location = 'http://ce.sharif.edu/~pooyapooya'
+                        });
+                    </script>
                     <h3>شمیم کریمی</h3>
                     <p>مدیر فنی بخش رابط کاربری</p>
                 </section>
-                <section class="3u 6u$(small) 9u$(xsmall)">
-                    <span class="icon alt major" style="background: url(images/Iman.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                <!--iman-->
+                <section class="3u 6u$(small) 9u$(xsmall) iman">
+                    <span class="icon alt major iman" style="background: url(images/Iman.jpg) left top; background-repeat: no-repeat; width: 100px; height: 100px"></span>
+                    <style>
+                        .iman:hover {
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                    </style>
+                    <script>
+                        $('.iman').click(function(){
+                            window.location = 'http://pashagroup.ir/info/?cat=7'
+                        });
+                    </script>
                     <h3>ایمان جامی‌مقدم</h3>
                     <p>مدیر گروه</p>
                 </section>
+                <!--pooya-->
                 <section class="3u 6u(small) 9u$(xsmall) pooya">
                     <span class="icon alt major pooya" style="background: url(images/Pooya.JPG) left top; background-repeat: no-repeat; width: 100px; height: 100px" >
                     </span>
@@ -188,7 +246,7 @@
                     </style>
                     <script>
                         $('.pooya').click(function(){
-                            window.location = 'http://ce.sharif.edu/~pooyapooya'
+                            window.location = 'http://pashagroup.ir/info/?cat=18'
                         });
                     </script>
                     <h3>پویا مصدق</h3>
