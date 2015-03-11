@@ -89,7 +89,7 @@
 			});
 
 		// Dropdowns.
-			$('#nav > ul').dropotron({
+			$('.nav > ul').dropotron({
 				alignment: 'right',
 				hideDelay: 350
 			});
