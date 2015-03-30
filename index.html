@@ -33,16 +33,16 @@
 <body class="landing" dir="rtl">
 
 <!-- Header -->
-<header id="header" style="background-color: rgba(100, 100, 100, 0.2)" dir="ltr">
+<header id="header" class="skel-layerس" style="background-color: rgba(100, 100, 100, 0.2); z-index: 99" dir="ltr">
 
     <nav class="nav" style="left: 1em">
         <ul>
             <li>
-                <a href="http://pashagroup.ir/info">اخبار گروه</a>
+                <a href="http://pashagroup.ir/info" class="button special small">اخبار گروه</a>
 
             </li>
             <li>
-                <a href="">برگه‌های شخصی</a>
+                <a href="" class="button label small">برگه‌های شخصی</a>
                 <ul>
                     <li><a href="http://pashagroup.ir/info/?cat=18">پویا مصدق</a></li>
                     <li><a href="http://pashagroup.ir/info/?cat=7">ایمان جامی‌مقدم</a></li>
@@ -50,7 +50,17 @@
                     <li><a href="http://pashagroup.ir/info/?cat=15">آرمان محمدی</a></li>
                 </ul>
             </li>
+
+            <li>
+                <a href="" class="button label small">تمارین</a>
+                <ul>
+                    <li><a href="#">تمرین اول</a></li>
+                    <li><a href="#">تمرین دوم</a></li>
+                </ul>
+            </li>
         </ul>
+
+
     </nav>
 
     <nav class="nav">
@@ -58,12 +68,14 @@
 
 
             <li></li>
-            <li><a href="#four" class="scrolly">معرفی اعضا</a></li>
-            <li><a href="#threeonim" class="scrolly">معرفی درس</a></li>
-            <li><a href="#three" class="scrolly">پروژه‌ها</a></li>
-            <li><a href="#two" class="scrolly">ارتباط و عقد قرارداد‌</a></li>
-            <li><a href="#one" class="scrolly">اساس‌نامه‌</a></li>
-            <li><a href="index.html" class="scrolly">خانه</a></li>
+
+            <li><a href="#five" class="scrolly" style="font-size: 0.9em">جست‌ و جو در متن</a></li>
+            <li><a href="#four" class="scrolly" style="font-size: 0.9em">معرفی اعضا</a></li>
+            <li><a href="#threeonim" class="scrolly" style="font-size: 0.9em">معرفی درس</a></li>
+            <li><a href="#three" class="scrolly" style="font-size: 0.9em">پروژه‌ها</a></li>
+            <li><a href="#two" class="scrolly" style="font-size: 0.9em">ارتباط و عقد قرارداد‌</a></li>
+            <li><a href="#one" class="scrolly" style="font-size: 0.9em">اساس‌نامه‌</a></li>
+            <li><a href="index.html" class="scrolly" style="font-size: 0.9em">خانه</a></li>
             <li></li>
         </ul>
 
@@ -172,9 +184,9 @@
             <p>تحلیل و طراحی سیستم‌ها </p>
         </header>
         <p>
-                        هدف از این درس آشنایي دانشجویان کارشناسي نرم افزار با مفاهیم تحلیل و طراحي سیستم های نرم افزاری است.
+            هدف از این درس آشنایي دانشجویان کارشناسي نرم افزار با مفاهیم تحلیل و طراحي سیستم های نرم افزاری است.
             <br>
-در این درس دانشجویان با انواع سیستمهای اطلاعاتي، چرخه حیات تولید و توسعه نرم افزار، روشهای مختلف ایجاد نرم افزار، تحلیل و طراحي ساخت یافته و مفاهیم مدیریت پروژه آشنا ميشوند.
+            در این درس دانشجویان با انواع سیستمهای اطلاعاتي، چرخه حیات تولید و توسعه نرم افزار، روشهای مختلف ایجاد نرم افزار، تحلیل و طراحي ساخت یافته و مفاهیم مدیریت پروژه آشنا ميشوند.
         </p>
         <p>
             <a href="mailto:pashagroupmail@gmail.com">لینک صفحه‌ی درس</a>
@@ -279,15 +291,23 @@
 <section id="five" class="wrapper style2 special fade">
     <div class="container">
         <header>
-            <h2>خبرنامه</h2>
-            <p>برای عضویت در خبرنامه‌ی گروه پاشا، نشانی پست الکتریکی خود را وارد نمایید</p>
+            <h2>جست‌ و جو در متن</h2>
+            <p>برای یافتن عبارت مورد نظر خود آن‌را نوشته و روی جست‌جو کلیک کنید</p>
         </header>
-        <form method="post" action="#" class="container 50%">
+        <form id="search-box" method="post" class="container 50%">
             <div class="row uniform 50%">
-                <div class="8u 12u$(xsmall)" id="badplace"><input type="email" name="email" id="email" placeholder="پست الکترونیکی شما" /></div>
-                <div class="4u$ 12u$(xsmall)" id="badbutton"><input type="submit" value="ارسال" class="fit special" /></div>
+                <div class="4u 12u$(xsmall)" id="badbutton"><input type="submit" value="جست و جو" class="fit special" /></div>
+                <div class="8u$ 12u$(xsmall)"><input type="search" name="email"  id="badplace" placeholder="عبارت مورد نظر" /></div>
+
             </div>
         </form>
+        <script>
+            $('#search-box').submit(function(){
+                var text = $('#badplace').val();
+                var url = 'http://pashagroup.ir/info/?s=' + text;
+                window.location = url;
+            });
+        </script>
     </div>
 </section>
 

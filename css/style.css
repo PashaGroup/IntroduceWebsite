@@ -533,6 +533,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="search"],
 select,
 textarea {
   -moz-appearance: none;
@@ -596,6 +597,7 @@ textarea {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="search"],
 select {
   height: 3em; }
 
