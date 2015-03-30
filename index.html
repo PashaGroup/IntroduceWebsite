@@ -294,20 +294,21 @@
             <h2>جست‌ و جو در متن</h2>
             <p>برای یافتن عبارت مورد نظر خود آن‌را نوشته و روی جست‌جو کلیک کنید</p>
         </header>
-        <form id="search-box" method="post" class="container 50%">
+        <script>
+            function search(){
+                var text = $('#badplace').val();
+                var url = 'http://pashagroup.ir/info/?s=' + text;
+                window.location = url
+            }
+        </script>
+        <form id="search-box" action="#" onsubmit="return false;" class="container 50%">
             <div class="row uniform 50%">
-                <div class="4u 12u$(xsmall)" id="badbutton"><input type="submit" value="جست و جو" class="fit special" /></div>
+                <div class="4u 12u$(xsmall)" id="badbutton"><input type="submit" value="جست و جو" class="fit special" onclick="search()" /></div>
                 <div class="8u$ 12u$(xsmall)"><input type="search" name="email"  id="badplace" placeholder="عبارت مورد نظر" /></div>
 
             </div>
         </form>
-        <script>
-            $('#search-box').submit(function(){
-                var text = $('#badplace').val();
-                var url = 'http://pashagroup.ir/info/?s=' + text;
-                window.location = url;
-            });
-        </script>
+
     </div>
 </section>
 
